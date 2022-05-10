@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>TraCARS™</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TraCARS™</a>
+          <div style="float: right">
+            <span><a class="navbar-links" href="reservations.html">Reservations</a></span>
+            <span><a class="navbar-links" href="newReso.html">New</a></span>
+          </div>
+        </div>
+        <!-- container -->
+      </nav>
+    </header>
+
+    <main class="d-flex align-items-center">
+      <!-- main section -->
+      <div class="container-md mt-5">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <!-- add form section -->
+            <h4 class="mb-4">Add Your Reservation</h4>
+            <form>
+              <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="John Matthews"
+                    required
+                  />
+                </div>
+                <!-- end of col-sm-10 name -->
+              </div>
+              <!-- end of row-->
+
+              <div class="row mb-3">
+                <label for="date" class="col-sm-2 col-form-label">Date:</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+                <!-- end of col-sm-10 date -->
+              </div>
+              <!-- end of row-->
+
+              <div class="row mb-3">
+                <label for="timeStart" class="col-sm-2 col-form-label"
+                  >Start:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="timeStart"
+                    required
+                  />
+                </div>
+                <!-- end of col-sm-10 timeStart -->
+              </div>
+              <!-- end of row-->
+
+              <div class="row mb-3">
+                <label for="timeEnd" class="col-sm-2 col-form-label"
+                  >End:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="timeEnd"
+                    required
+                  />
+                </div>
+                <!-- end of col-sm-10 timeEnd -->
+              </div>
+              <!-- end of row-->
+
+              <div class="row mb-3">
+                <label for="notes" class="col-sm-2 col-form-label"
+                  >Notes:</label
+                >
+                <div class="col-sm-10">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="notes"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <!-- end of col-sm-10 name -->
+              </div>
+              <!-- end of row-->
+            </form>
+            <!-- end of form -->
+
+            <div class="col float-md-end mb-3">
+              <button type="submit" class="btn btn-primary" onclick="submit()">
+                Sumbit
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="cancel()"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+          <!-- end of col-md-6 -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container-md -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start fixed-bottom text-white">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="#">TraCars</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="newReso.js"></script>
+  </body>
+</html>
